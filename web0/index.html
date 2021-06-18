@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>It Begins</title>
+    </head>
+    <body>
+        <h1>It Begins</h1>
+        <p>Congratulations on figuring out that duck. Your next step will be to decode this 1050 bit RSA hash.</p>
+        <p>Hash:V88Mh0yyQPo5Ah0bcPRdMvKfrH6ZNbsXvWLXGhu50KQhXdDelj7EvFPAMhVuMa+IlEEvBpntdc3OWEAqvRoS1a0+nN3sAIczhvS0i/3F7NWUsI8v5XOlFymz7fCTMxz5Rf/JyTC6dikFhjgvGIa+JBuJtSLQJmCCxiul2zpf0gA=</p>
+        <p>Enter the plaintext version of this hash and click the button to continue</p>
+        <input type="text" id="plaintext">
+        <button onclick="PlainCheck()">Enter</button>
+        <p id="return"></p>
+        <script>
+            const PlainCheck = () =>
+            {
+                if(document.getElementById("plaintext").value == "QWUEdqwd123dw1d1Wdqd22")
+                {
+                    document.getElementById("return").innerHTML = "Correct, use this code as a route and send a GET request at: \n (Do Later)"
+                }
+                else 
+                {
+                    document.getElementById("return").innerHTML = "False";
+                }
+                document.getElementById("plaintext").value = "";
+            }
+        </script>
+    </body>
+</html>
